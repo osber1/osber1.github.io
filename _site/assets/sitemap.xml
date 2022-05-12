@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:xhtml="http://www.w3.org/1999/xhtml"
+xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2022-03-03-mr-green-jekyll-theme</loc>
+    <lastmod>2022-03-03T05:32:10+02:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/mock1.jpg</image:loc>
+      <image:title>Mr. Green Jekyll Theme</image:title>
+    </image:image>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2022-03-03-mr-green-jekyll-theme" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2022-03-03-mr-green-jekyll-theme" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2022-03-03-mr-green-jekyll-theme" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2022-03-03-mr-green-jekyll-theme" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2022-03-03-mr-green-jekyll-theme" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/2022-03-03-mr-green-jekyll-theme</loc>
+    <lastmod>2022-03-03T03:04:19+02:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/mock1.jpg</image:loc>
+      <image:title>Mr. Green Jekyll テーマ</image:title>
+    </image:image>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2022-03-03-mr-green-jekyll-theme" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2022-03-03-mr-green-jekyll-theme" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2022-03-03-mr-green-jekyll-theme" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2022-03-03-mr-green-jekyll-theme" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2022-03-03-mr-green-jekyll-theme" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2022-02-10-Examples</loc>
+    <lastmod>2022-02-10T01:11:06+02:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic1.jpg</image:loc>
+      <image:title>Examples</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2022-01-01-welcome-to-jekyll</loc>
+    <lastmod>2022-01-01T03:04:30+02:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic3.jpg</image:loc>
+      <image:title>Welcome to Jekyll!</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/2021-10-15-Test-page6</loc>
+    <lastmod>2021-10-15T13:20:03+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic3.jpg</image:loc>
+      <image:title>サンプル投稿(自動生成)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-10-15-Test-page6" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-10-15-Test-page6" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-10-15-Test-page6" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-10-15-Test-page6" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-10-15-Test-page6" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2021-10-15-Test-page6</loc>
+    <lastmod>2021-10-15T13:20:03+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic3.jpg</image:loc>
+      <image:title>Sample post (auto generated)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-10-15-Test-page6" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-10-15-Test-page6" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-10-15-Test-page6" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-10-15-Test-page6" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-10-15-Test-page6" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/2021-10-14-Test-page5</loc>
+    <lastmod>2021-10-14T12:47:35+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic2.jpg</image:loc>
+      <image:title>サンプル投稿(自動生成)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-10-14-Test-page5" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-10-14-Test-page5" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-10-14-Test-page5" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-10-14-Test-page5" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-10-14-Test-page5" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2021-10-14-Test-page5</loc>
+    <lastmod>2021-10-14T12:47:35+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic2.jpg</image:loc>
+      <image:title>Sample post (auto generated)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-10-14-Test-page5" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-10-14-Test-page5" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-10-14-Test-page5" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-10-14-Test-page5" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-10-14-Test-page5" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/2021-09-13-Test-page4</loc>
+    <lastmod>2021-09-13T08:47:12+03:00</lastmod>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-09-13-Test-page4" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-09-13-Test-page4" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-09-13-Test-page4" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-09-13-Test-page4" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-09-13-Test-page4" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2021-09-13-Test-page4</loc>
+    <lastmod>2021-09-13T08:47:12+03:00</lastmod>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-09-13-Test-page4" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-09-13-Test-page4" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-09-13-Test-page4" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-09-13-Test-page4" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-09-13-Test-page4" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/2021-09-12-Test-page3</loc>
+    <lastmod>2021-09-12T07:45:08+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic3.jpg</image:loc>
+      <image:title>サンプル投稿(自動生成)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-09-12-Test-page3" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-09-12-Test-page3" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-09-12-Test-page3" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-09-12-Test-page3" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-09-12-Test-page3" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2021-09-12-Test-page3</loc>
+    <lastmod>2021-09-12T07:45:08+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic3.jpg</image:loc>
+      <image:title>Sample post (auto generated)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-09-12-Test-page3" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-09-12-Test-page3" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-09-12-Test-page3" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-09-12-Test-page3" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-09-12-Test-page3" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/2021-08-11-Test-page2</loc>
+    <lastmod>2021-08-11T06:35:04+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic2.jpg</image:loc>
+      <image:title>サンプル投稿(自動生成)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-08-11-Test-page2" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-08-11-Test-page2" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-08-11-Test-page2" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-08-11-Test-page2" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-08-11-Test-page2" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2021-08-11-Test-page2</loc>
+    <lastmod>2021-08-11T06:35:04+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic2.jpg</image:loc>
+      <image:title>Sample post (auto generated)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-08-11-Test-page2" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-08-11-Test-page2" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-08-11-Test-page2" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-08-11-Test-page2" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-08-11-Test-page2" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/2021-08-10-Test-page1</loc>
+    <lastmod>2021-08-10T05:32:53+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic1.jpg</image:loc>
+      <image:title>サンプル投稿(自動生成)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-08-10-Test-page1" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-08-10-Test-page1" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-08-10-Test-page1" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-08-10-Test-page1" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-08-10-Test-page1" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/posts/2021-08-10-Test-page1</loc>
+    <lastmod>2021-08-10T05:32:53+03:00</lastmod>
+    <image:image>
+      <image:loc>http://0.0.0.0:4000/assets/img/posts/post_pic1.jpg</image:loc>
+      <image:title>Sample post (auto generated)</image:title>
+    </image:image>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/2021-08-10-Test-page1" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/2021-08-10-Test-page1" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/posts/2021-08-10-Test-page1" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/posts/2021-08-10-Test-page1" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/posts/2021-08-10-Test-page1" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/about.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/about.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/about.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/tabs/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/about.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/about.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/about.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/about.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/about.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/archive.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/archive.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/archive.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/archive.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/archive.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/archive.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/tabs/archive.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/archive.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/archive.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/archive.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/archive.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/archive.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/blog/" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/blog/" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/blog/" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/blog/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/blog/" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/tabs/blog/</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/blog/" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/blog/" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/blog/" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/blog/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/blog/" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/</loc>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/</loc>
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/links.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/links.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/links.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/links.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/links.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/links.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/tabs/links.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/links.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/links.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/links.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/links.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/links.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/projects.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/projects.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/projects.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/projects.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/projects.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/projects.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/ja/tabs/projects.html</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/projects.html" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/projects.html" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/projects.html" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/projects.html" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/projects.html" />
+  </url>
+  <url>
+    <loc>http://0.0.0.0:4000/tabs/blog/2/</loc>
+        <xhtml:link rel="alternate" hreflang="x-default" href="http://0.0.0.0:4000/tabs/blog/" />
+      <xhtml:link rel="alternate" hreflang="en-US" href="http://0.0.0.0:4000/tabs/blog/" />
+        <xhtml:link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/tabs/blog/" />
+      <xhtml:link rel="alternate" hreflang="ja-JP" href="http://0.0.0.0:4000/ja/tabs/blog/" />
+        <xhtml:link rel="alternate" hreflang="ja" href="http://0.0.0.0:4000/ja/tabs/blog/" />
+  </url>
+</urlset>
+

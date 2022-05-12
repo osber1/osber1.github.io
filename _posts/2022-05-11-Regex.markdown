@@ -1,0 +1,88 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_java_steams
+title: "Regex"
+
+# post specific
+# if not specified, .name will be used from _data/owner.yml
+author: Osvaldas
+# multiple category is not supported
+category: regex
+# multiple tag entries are possible
+tags: [java, regex]
+# thumbnail image for post
+img: ":regex.jpg"
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2022-05-11 00:00:00 +0300
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-05-15 00:00:00 +0300
+# check the meta_common_description in _data/lang/[language].yml
+#meta_description: ""
+
+# optional
+# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
+#image_viewer_on: true
+# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+<!-- outline-start -->
+
+Useful code snippets when using Java regex
+
+<!-- outline-end -->
+
+Regex java documentation https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html
+
+#### Java Regex
+
+^ - beginning of the string.
+
+$ - end of the string.
+
+[Aa] - A and a.
+
+[A|a] - A or a.
+
+\\. - dot (to get exact symbol use \., but double \\ is used to escape one \).
+
+a(?!A) - a not followed by A.
+
+a{3} - a 3 times.
+
+a{1,5} - a from 1 to 5 times.
+
+a+ - a one or more times.
+
+a* - zero or more times.
+
+[a][b] - a followed by b.
+
+[abc] - all a, b and c. 
+
+[^abc] - everything except a, b and c.
+
+(?i) - make case insensitive.
+
+\\d - all numbers.
+
+\\D - all letters.
+
+\\s - all tabs and spaces.
+
+\\S - tabs but not spaces.
+
+\\w - every symbol except spaces and tabs.
+
+\\b - beginning and end of every word.
+

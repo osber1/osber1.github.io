@@ -1,0 +1,185 @@
+---
+# multilingual page pair id, this must pair with translations of this page. (This name must be unique)
+lng_pair: id_java_steams
+title: "Git"
+
+# post specific
+# if not specified, .name will be used from _data/owner.yml
+author: Osvaldas
+# multiple category is not supported
+category: git
+# multiple tag entries are possible
+tags: [git]
+# thumbnail image for post
+img: ":git.png"
+# disable comments on this page
+#comments_disable: true
+
+# publish date
+date: 2022-05-10 00:00:00 +0300
+
+# seo
+# if not specified, date will be used.
+#meta_modify_date: 2022-05-14 00:00:00 +0300
+# check the meta_common_description in _data/lang/[language].yml
+#meta_description: ""
+
+# optional
+# if you enabled image_viewer_posts you don't need to enable this. This is only if image_viewer_posts = false
+#image_viewer_on: true
+# if you enabled image_lazy_loader_posts you don't need to enable this. This is only if image_lazy_loader_posts = false
+#image_lazy_loader_on: true
+# exclude from on site search
+#on_site_search_exclude: true
+# exclude from search engines
+#search_engine_exclude: true
+# to disable this page, simply set published: false or delete this file
+#published: false
+---
+<!-- outline-start -->
+
+Useful code snippets when using git
+
+<!-- outline-end -->
+
+#### Initialize repository
+`git init`
+
+#### Check file changes
+`git status`
+
+#### Add changes to git
+To select all - git add .
+
+Instead of git add you can use git commit -a
+
+`git add <file>`
+
+#### remove from repository
+`git rm <file>`
+
+#### Git commit
+If you want to add something to same commit - git add, then - git commit --amend
+
+If you want to change commit message too - git commit --amend -m "<New message>"
+
+`git commit -m "message"`
+
+#### Push to remote
+First time you need to use - git push -u origin branch_name
+
+If you want to add tags use - git push origin --tags
+
+`git push`
+
+#### Restores file before all changes
+`git restore <file>`
+
+#### Restores file chunks(lines). You can choose which lines you want to leave
+`git restore -p <file>`
+
+#### Restores one file
+`git restore --source <commit hash> <file>`
+
+#### Revert to previous commit
+`git revert <commit hash>`
+
+#### Deletes everything from that commit(--hard deletes everything, --mixed leaves all changes in local repository)
+`git reset --hard <commit hash>`
+
+`git reset --mixed <commit hash>`
+
+#### Restore deleted commit or deleted branch to new branch
+`git branch restored-commit <commit hash>`
+
+#### Move commit to new branch if you accidentally added it to master
+`git branch <new branch>`
+
+`git reset HEAD~1 --hard`
+
+#### Move commit to different branch
+`git checkout <other branch>`
+
+`git cherry-pick <commit hash>`
+
+`git checkout master`
+
+`git reset HEAD~1 --hard`
+
+#### Edit old commit message
+Use reword
+
+`git rebase -i HEAD~3`
+
+#### Delete old commit
+Use drop
+
+`git rebase -i HEAD~3`
+
+#### Merge multiple commits to one
+Use squash (merges line with squash and line above)
+
+`git rebase -i HEAD~3`
+
+#### Add changes to an old commit
+`git commit --fixup <commit hash to fix>` 
+
+OR 
+
+`git rebase -i HEAD~3 --autosquash`
+
+#### Clone remote repository from git
+`git clone https://github.com/osber1/repo-name`
+
+#### Connect local repository with remote
+`git remote add origin https://github.com/osber1/repo-name`
+
+#### Update repository
+If you want to update only one file - git checkout -- <file>
+
+`git pull`
+
+#### Create new branch
+-d deletes branch
+
+`git <branch name>`
+
+#### Change active branch
+`git checkout <branch name>`
+
+#### Merge branch into current branch
+`git merge <branch name>`
+
+#### Git stash 
+Creates a copy of working files changes and add it for "later" and repository is clean again, like it was before changes.
+
+Then you can make urgent changes and push it to master, and then back to changes, you were working before.
+
+Back to changes that you were working before - `git stash apply`
+
+`git stash`
+
+`git stash pop`
+
+`git stash list`
+
+#### Creates tags, if you want to look all tags - git tag
+`git tag -a v0.1 -m "message"`
+
+#### Show with which commit that tag is associated
+`git show v0.1`
+
+#### Transfer all changes from any branch, to master
+Active branch must be other branch, that you want to merge to master
+
+`git rebase master`
+
+#### Logs
+`git log`
+
+`git reflog`
+
+#### Configure user
+`git config --global user.name "Osvaldas Bernatavičius"`
+
+`git config --global user.email osvaldas.bernatavicius@gmail.com`

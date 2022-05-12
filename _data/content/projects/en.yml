@@ -1,0 +1,69 @@
+# you can move this content to front matter of [language]/tabs/projects.md
+###########################################################
+#                Projects Page Data
+###########################################################
+page_data:
+  main:
+    header: "Projects"
+    info: "Various sample projects"
+    text_color: "white"
+    # if you don't want to use background image, comment it. back_color will be activated.
+    # img: ":projects.jpg"
+    back_color: "lightblue"
+
+  category:
+    - title: "Projects"
+      type: id_projects
+      color: "#A8A7A7"
+#      color: "#CC527A"
+#      color: "#E8175D"
+#      color: "#FFAAA6"
+#      color: "#474747"
+#      color: "#363636"
+
+  list:
+    - type: id_projects
+      project_name: "Loans project"
+      project_excerpt: "Sample Java project"
+      img: ":java.png"
+      img_title: "Java"
+      date: "2022-05-13"
+      post: |
+        # Sample loans project
+
+        This is a project to show my knowledge in creating Spring applications.
+
+        More detailed documentation can be found in GitHub Repository README.
+
+        #### Link to GitHub Repository
+
+        This is [GitHub Repository](https://github.com/osber1/loans).
+
+        #### Application flow
+
+        1. Register user and confirm email in email service.
+        2. Take loan.
+        3. You can postpone loan.
+
+#        {:data-align="center"}
+#        ***
+#        Bold text **Hello world**
+#        Italic text _Hello world_
+#        kbd text <kbd>Hello world</kbd>
+#        > **William Shakespeare**
+#        This is [Mr. Green Jekyll Theme](https://github.com/MrGreensWorkshop/MrGreen-JekyllTheme), a simple theme built for [Jekyll](https://jekyllrb.com/).
+#        ![such a lovely place](:projects-heading.jpg)
+#        - Banana
+#        1. Fruits
+#            1. Apples
+#                - Granny Smith
+#        | Fruits | num (left align) | num (right align) | num  | num  | num  | num  | num  | num  |
+#        | ------ | :--------------- | ----------------: | ---- | ---- | ---- | ---- | ---- | ---- |
+#        | Apple  | 1111             |              1111 | 2222 | 3333 | 4444 | 5555 | 6666 | 7777 |
+#        | Banana | 111              |               111 | 222  | 333  | 444  | 555  | 666  | 777  |
+#        | Orange | 11               |                11 | 22   | 33   | 44   | 55   | 66   | 77   |
+#        | Lemon  | 1                |                 1 | 2    | 3    | 4    | 5    | 6    | 7    |
+#        ```python
+#        for i in range(5, 10):
+#          print(i)
+#        ```

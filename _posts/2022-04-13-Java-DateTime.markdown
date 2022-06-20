@@ -1,6 +1,6 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_java_steams
+lng_pair: id_datetime
 title: "Java DateTime"
 
 # post specific

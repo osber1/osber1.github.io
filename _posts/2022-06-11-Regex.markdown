@@ -1,6 +1,6 @@
 ---
 # multilingual page pair id, this must pair with translations of this page. (This name must be unique)
-lng_pair: id_java_steams
+lng_pair: id_regex
 title: "Regex"
 
 # post specific
@@ -16,7 +16,7 @@ img: ":regex.jpg"
 #comments_disable: true
 
 # publish date
-date: 2022-05-11 00:00:00 +0300
+date: 2022-06-11 00:00:00 +0300
 
 # seo
 # if not specified, date will be used.

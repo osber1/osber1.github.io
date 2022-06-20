@@ -94,6 +94,11 @@ page_data:
       title: "Documentations"
       url: "https://devdocs.io"
       info: "Many different documentation in one place."
+      info: "Interactive Git Cheat Sheet."
+    - type: id_usefullink
+      title: "Seach engine"
+      url: "https://you.com/"
+      info: "Search engine for programmers."
 
     # Java Links
     - type: id_java

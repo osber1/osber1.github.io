@@ -94,7 +94,6 @@ page_data:
       title: "Documentations"
       url: "https://devdocs.io"
       info: "Many different documentation in one place."
-      info: "Interactive Git Cheat Sheet."
     - type: id_usefullink
       title: "Seach engine"
       url: "https://you.com/"
@@ -253,4 +252,12 @@ page_data:
       title: "Spring How"
       url: "https://springhow.com"
       info: "Spring How blog."
+    - type: id_blogs
+      title: "Thorben Janssen"
+      url: "https://thorben-janssen.com/"
+      info: "Thorben Janssen blog."
+    - type: id_blogs
+      title: "Vlad Mihalcea"
+      url: "https://vladmihalcea.com/blog/"
+      info: "Vlad Mihalcea blog."
 ---

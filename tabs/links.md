@@ -260,4 +260,8 @@ page_data:
       title: "Vlad Mihalcea"
       url: "https://vladmihalcea.com/blog/"
       info: "Vlad Mihalcea blog."
+    - type: id_blogs
+      title: "Refactoring Guru"
+      url: "https://refactoring.guru/"
+      info: "Refactoring Guru blog."
 ---

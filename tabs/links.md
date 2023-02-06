@@ -188,6 +188,10 @@ page_data:
       title: "Linux Handbook"
       url: "https://www.freecodecamp.org/news/the-linux-commands-handbook"
       info: "Handbook for Linux."
+    - type: id_handbooks
+      title: "Cheatsheets"
+      url: "https://sweworld.net/cheatsheets/"
+      info: "Few useful cheatsheets."
       
     # Training Tools
     - type: id_training

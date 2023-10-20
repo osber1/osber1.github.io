@@ -96,12 +96,16 @@ page_data:
       info: "Many different documentation in one place."
     - type: id_usefullink
       title: "Seach engine"
-      url: "https://you.com/"
+      url: "https://you.com"
       info: "Search engine for programmers."
     - type: id_usefullink
       title: "Tech talks"
-      url: "https://dev.tube/"
+      url: "https://dev.tube"
       info: "Tech talks for developers"
+    - type: id_usefullink
+      title: "Open Rewrite"
+      url: "https://docs.openrewrite.org"
+      info: "Automated Code Refactoring"
 
     # Java Links
     - type: id_java

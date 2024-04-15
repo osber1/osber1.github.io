@@ -45,59 +45,13 @@ Useful code snippets when using Java Streams
 ### Compare
 
 {% highlight java %}
-list.stream()
-    .sorted(Comparator.comparing(ObjectClass::method))
-    .forEach(System.out::println);
-
 map.entrySet().stream()
     .sorted(Map.Entry.comparingByKey())
     .forEach(System.out::println);
 
 map.entrySet().stream()
-    .sorted(Map.Entry.comparingByKey(Comparator.comparing(ObjectClass::method)))
+    .sorted(Map.Entry.comparingByKey(Comparator.comparing(ObjectClass::method).thenComparing(Person::getGender).reversed()))
     .forEach(System.out::println);
-{% endhighlight %}
-
-
-### Filtering
-
-{% highlight java %}
-List<Person> females = people.stream()
-    .filter(person -> Gender.FEMALE == person.getGender())
-    .collect(Collectors.toList());
-{% endhighlight %}
-
-### Sorting
-
-{% highlight java %}
-List<Person> sorted = people.stream()
-    .sorted(Comparator.comparing(Person::getAge).thenComparing(Person::getGender).reversed())
-    .collect(Collectors.toList());
-{% endhighlight %}
-
-### Matching
-
-{% highlight java %}
-boolean allMatch = people.stream()
-    .allMatch(person -> person.getAge() > 8);
-
-boolean anyMatch = people.stream()
-    .anyMatch(person -> person.getAge() > 121);
-
-boolean noneMatch = people.stream()
-    .noneMatch(person -> person.getName().equals("Antonio"));
-{% endhighlight %}
-
-### MIN or MAX
-
-{% highlight java %}
-people.stream()
-    .max(Comparator.comparing(Person::getAge));
-    .ifPresent(System.out::println);
-
-people.stream()
-    .min(Comparator.comparing(Person::getAge));
-	.ifPresent(System.out::println);
 {% endhighlight %}
 
 ### Grouping
@@ -105,21 +59,6 @@ people.stream()
 {% highlight java %}
 Map<Gender, List<Person>> groupByGender = people.stream()
     .collect(Collectors.groupingBy(Person::getGender));
-
-groupByGender.forEach((gender, people1) -> {
-        System.out.println(gender);
-        people1.forEach(System.out::println);
-        System.out.println();
-    });
-{% endhighlight %}
-
-### Filter by gender, and then get the oldest female name
-
-{% highlight java %}
-Optional<String> oldestFemaleAge = people.stream()
-    .filter(person -> Gender.FEMALE == person.getGender())
-    .max(Comparator.comparing(Person::getAge))
-    .map(Person::getName);
 {% endhighlight %}
 
 ### Print group

@@ -94,15 +94,18 @@ page_data:
       title: "Documentations"
       url: "https://devdocs.io"
       info: "Many different documentation in one place."
-      info: "Interactive Git Cheat Sheet."
     - type: id_usefullink
       title: "Seach engine"
-      url: "https://you.com/"
+      url: "https://you.com"
       info: "Search engine for programmers."
     - type: id_usefullink
       title: "Tech talks"
-      url: "https://dev.tube/"
+      url: "https://dev.tube"
       info: "Tech talks for developers"
+    - type: id_usefullink
+      title: "Open Rewrite"
+      url: "https://docs.openrewrite.org"
+      info: "Automated Code Refactoring"
 
     # Java Links
     - type: id_java
@@ -189,6 +192,10 @@ page_data:
       title: "Linux Handbook"
       url: "https://www.freecodecamp.org/news/the-linux-commands-handbook"
       info: "Handbook for Linux."
+    - type: id_handbooks
+      title: "Cheatsheets"
+      url: "https://sweworld.net/cheatsheets/"
+      info: "Few useful cheatsheets."
       
     # Training Tools
     - type: id_training
@@ -253,4 +260,16 @@ page_data:
       title: "Spring How"
       url: "https://springhow.com"
       info: "Spring How blog."
+    - type: id_blogs
+      title: "Thorben Janssen"
+      url: "https://thorben-janssen.com/"
+      info: "Thorben Janssen blog."
+    - type: id_blogs
+      title: "Vlad Mihalcea"
+      url: "https://vladmihalcea.com/blog/"
+      info: "Vlad Mihalcea blog."
+    - type: id_blogs
+      title: "Refactoring Guru"
+      url: "https://refactoring.guru/"
+      info: "Refactoring Guru blog."
 ---

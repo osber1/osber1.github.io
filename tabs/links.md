@@ -110,9 +110,14 @@ page_data:
       title: "OpenAPM"
       url: "https://openapm.io/landscape"
       info: "Open Application Performance Management tools"
-
-
-      
+    - type: id_usefullink
+      title: "Kubetools"
+      url: "https://collabnix.github.io/kubetools"
+      info: "A Curated List of Kubernetes Tools"
+    - type: id_usefullink
+      title: "Development Containers"
+      url: "https://containers.dev"
+      info: "An open specification for enriching containers with development specific content and settings"
 
     # Java Links
     - type: id_java

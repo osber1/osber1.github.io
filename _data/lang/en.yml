@@ -174,7 +174,7 @@ auto_content:
   greeting: Hello!
   text: *meta_info
   more_info: Learn More.
-  auto_generated_text: I am a Java developer with almost 2 years of experience. I have experience working with technologies such as Java, Spring, MYSQL, PostgreSQL, Hibernate, Groovy, Docker, Kubernetes, RabbitMQ, Redis and Liquibase.
+  auto_generated_text: I am a Senior Java developer with almost 4 years of experience. I have experience working with technologies like Java, Liquibase, Spring, MYSQL, PostgreSQL, Hibernate, Groovy, Docker, Kubernetes, RabbitMQ, Redis, ELK stack and Grafana.
 
 cookie_consent:
   privacy_policy_link_text: *privacy_policy_title

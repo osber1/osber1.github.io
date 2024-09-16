@@ -67,11 +67,11 @@ page_data:
     -
     # Useful Links
     - type: id_usefullink
-      title: "JSON to DTO"
-      url: "https://quicktype.io"
-      info: "Convert any JSON to DTO."
+      title: "Good Stuff"
+      url: "https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index/"
+      info: "Handy links"
     - type: id_usefullink
-      title: "30 Secons of Code"
+      title: "30 Seconds of Code"
       url: "https://www.30secondsofcode.org"
       info: "Small code snippets."
     - type: id_usefullink

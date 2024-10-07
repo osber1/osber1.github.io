@@ -122,6 +122,10 @@ page_data:
       title: "OrbStack"
       url: "https://orbstack.dev"
       info: "OrbStack is the fast, light, and easy way to run Docker containers and Linux"
+    - type: id_usefullink
+      title: "Private File Sharing"
+      url: "https://gist.github.com/Bad3r/f7f91a4b4cdd15f467f095fddd5108a7"
+      info: "Private File Sharing Services"
       
     # Java Links
     - type: id_java
@@ -140,10 +144,6 @@ page_data:
       title: "Tutorials Point"
       url: "https://www.tutorialspoint.com/java"
       info: "Java tutorials."
-    - type: id_java
-      title: "Private File Sharing"
-      url: "https://gist.github.com/Bad3r/f7f91a4b4cdd15f467f095fddd5108a7"
-      info: "Private File Sharing Services"
 
     # Git Repositories
     - type: id_git

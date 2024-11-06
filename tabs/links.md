@@ -191,7 +191,7 @@ page_data:
     - type: id_handbooks
       title: "Awesome Cheatsheets"
       url: "https://github.com/LeCoupa/awesome-cheatsheets"
-      info: "Many different cheatsheets."
+      info: "Many different cheat sheets."
     - type: id_handbooks
       title: "Docker Handbook"
       url: "https://www.freecodecamp.org/news/the-docker-handbook"
@@ -214,8 +214,12 @@ page_data:
       info: "Handbook for Linux."
     - type: id_handbooks
       title: "Cheatsheets"
-      url: "https://sweworld.net/cheatsheets/"
-      info: "Few useful cheatsheets."
+      url: "https://sweworld.net/cheatsheets"
+      info: "Few useful cheat sheets."
+    - type: id_handbooks
+      title: "Cheatsheets"
+      url: "https://cheatsheets.zip"
+      info: "Useful cheat sheets."
       
     # Training Tools
     - type: id_training

@@ -68,8 +68,12 @@ page_data:
     # Useful Links
     - type: id_usefullink
       title: "Good Stuff"
-      url: "https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index/"
+      url: "https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index"
       info: "Handy links"
+    - type: id_usefullink
+      title: "freemediaheckyeah"
+      url: "https://fmhy.net"
+      info: "The largest collection of free stuff on the internet!"
     - type: id_usefullink
       title: "30 Seconds of Code"
       url: "https://www.30secondsofcode.org"

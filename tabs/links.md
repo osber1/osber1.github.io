@@ -73,7 +73,11 @@ page_data:
     - type: id_usefullink
       title: "codebeautify"
       url: "https://codebeautify.org"
-      info: "Code Formatter, JSON Beautifier, XML Viewer, Hex Converters and more..."
+      info: "Code Formatter, JSON Beautifier, XML Viewer, Hex Converters and more."
+    - type: id_usefullink
+      title: "DevDocs"
+      url: "https://devdocs.io"
+      info: "DevDocs combines multiple API documentations in a fast, organized, and searchable interface."
     - type: id_usefullink
       title: "freemediaheckyeah"
       url: "https://fmhy.net"

@@ -71,6 +71,10 @@ page_data:
       url: "https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index"
       info: "Handy links"
     - type: id_usefullink
+      title: "codebeautify"
+      url: "https://codebeautify.org"
+      info: "Code Formatter, JSON Beautifier, XML Viewer, Hex Converters and more..."
+    - type: id_usefullink
       title: "freemediaheckyeah"
       url: "https://fmhy.net"
       info: "The largest collection of free stuff on the internet!"

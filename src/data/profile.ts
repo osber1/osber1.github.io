@@ -31,7 +31,12 @@ export const profile = {
   hero: {
     title: ['Senior', 'Back-End Developer'],
     rotator: { prefix: 'I build with', words: ['Java', 'Spring Boot', 'TypeScript', 'Kubernetes', 'PostgreSQL'] },
-    tags: ['Spring Boot', 'PostgreSQL', 'Kubernetes', 'TypeScript'],
+    // Scenes that replace the title while the hero is pinned and you scroll (desktop only)
+    scenes: [
+      { label: 'Now', title: 'Senior Software Engineer', sub: 'At VIALET since June 2026. Before that five years at 4finance.', chips: [] as string[] },
+      { label: 'Stack', title: 'Back-end first', sub: 'Java and Spring Boot every day, with TypeScript and NestJS on the side.', chips: ['Java', 'Spring Boot', 'PostgreSQL', 'Kubernetes', 'TypeScript'] },
+      { label: 'Certified', title: 'Oracle Java SE 11 Developer', sub: 'Oracle Certified Professional, September 2022.', chips: [] as string[] },
+    ],
   },                   // rendered "Senior<br/>Back-End Developer"
   about: {
     eyebrow: 'a little', title: 'About Me', greeting: 'Hello!',
@@ -82,8 +87,8 @@ export const profile = {
   stats: [
     { value: 5, suffix: '+', label: 'Years of experience' },
     { value: 4, suffix: '', label: 'Companies worked with' },
-    { value: 4, suffix: '', label: 'Java versions (8, 11, 17, 25)' },
-    { value: 1, suffix: '', label: 'Oracle certification' },
+    { value: 4, suffix: '+', label: 'Years freelancing' },
+    { value: 2, suffix: '+', label: 'Years as a senior engineer' },
   ],
   faq: {
     eyebrow: 'Good to know',

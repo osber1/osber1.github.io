@@ -257,7 +257,7 @@
   }
 }
 
-/* ---------- Hero: rotating word + floating skill tags ---------- */
+/* ---------- Hero: rotating word ---------- */
 .hero__rotator {
   margin: 16px 0 0;
   font: var(--fw-semibold) var(--fs-h3)/var(--lh-h3) var(--font-sans);
@@ -283,47 +283,7 @@
 }
 @keyframes word-in { from { opacity: 0; transform: translateY(70%); } }
 
-.hero__tags { display: none; }
-@media (min-width: 1200px) {
-  .hero__tags {
-    display: block;
-    position: absolute;
-    inset: 0;
-    z-index: 3;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    pointer-events: none;
-  }
-  .hero__tag {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: var(--r-pill);
-    background: rgba(255, 255, 255, 0.94);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    font: var(--fw-semibold) 14px/20px var(--font-sans);
-    color: var(--c-black);
-    white-space: nowrap;
-    animation: tag-float 6s ease-in-out infinite alternate;
-  }
-  .hero__tag::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--c-blue);
-  }
-  .hero__tag:nth-child(1) { left: calc(50% + 210px); top: 150px; }
-  .hero__tag:nth-child(2) { left: calc(50% + 540px); top: 300px; animation-duration: 7s; animation-delay: -2s; }
-  .hero__tag:nth-child(3) { left: calc(50% - 150px); top: 430px; animation-duration: 5.5s; animation-delay: -1s; }
-  .hero__tag:nth-child(4) { left: calc(50% + 330px); top: 500px; animation-duration: 6.5s; animation-delay: -3.5s; }
-}
-@keyframes tag-float { to { transform: translateY(-12px); } }
 @media (prefers-reduced-motion: reduce) {
-  .hero__tag { animation: none; }
   .rotator__word.is-active { animation: none; }
 }
 
@@ -361,4 +321,77 @@
 }
 @media (min-width: 1200px) {
   .stats + .technologies { padding-top: 96px; }
+}
+
+/* ---------- Pinned hero scenes (desktop) ----------
+   Hero.tsx adds .is-pinned on wide screens without reduced motion and sets --p (0 to 1) on the track while you scroll.
+   The hero stays stuck to the top for --pin-length of scrolling; the title block fades out, the scenes fade in and out. */
+.hero__scene { display: none; }
+.hero-track { --pin-length: 1800px; }
+.hero-track.is-pinned {
+  position: relative;
+  height: calc(var(--hero-h) + var(--pin-length));
+  --p: 0;
+}
+.hero-track.is-pinned .hero { position: sticky; top: 0; }
+.hero-track.is-pinned .hero__title,
+.hero-track.is-pinned .hero__name,
+.hero-track.is-pinned .hero__rotator { --s: -1; --e: 0.16; }
+.hero-track.is-pinned :is(.hero__title, .hero__name, .hero__rotator, .hero__scene) {
+  --a: clamp(0, calc((var(--p) - var(--s)) / 0.07), 1);
+  --b: clamp(0, calc((var(--p) - var(--e)) / 0.07), 1);
+  opacity: calc(var(--a) * (1 - var(--b)));
+  transform: translateY(calc((1 - var(--a)) * 40px - var(--b) * 40px));
+}
+.hero-track.is-pinned .hero__scene {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: min(380px, 100%);
+  pointer-events: none;
+}
+.hero__scene-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font: var(--fw-regular) var(--fs-body)/var(--lh-body) var(--font-sans);
+  color: var(--c-grey-light);
+  text-transform: uppercase;
+}
+.hero__scene-label::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--c-white);
+}
+.hero__scene-title {
+  margin: 12px 0 0;
+  font: var(--fw-semibold) 40px/52px var(--font-sans);
+  color: var(--c-white);
+}
+.hero__scene-sub {
+  margin: 16px 0 0;
+  max-width: 380px;
+  font: var(--fw-regular) 18px/28px var(--font-sans);
+  color: var(--c-grey-light);
+}
+.hero__scene-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+}
+.hero__scene-chips span {
+  padding: 4px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: var(--r-pill);
+  font: var(--fw-regular) 14px/20px var(--font-sans);
+  color: var(--c-white);
+}
+.hero-track.is-pinned .hero__laptop {
+  transform: translateX(-50%) translateY(calc(var(--p) * -28px)) scale(calc(1 + var(--p) * 0.05));
+  transform-origin: 50% 60%;
 }

@@ -142,7 +142,7 @@
   .cert-card {
     display: grid;
     grid-template-columns: 476px 1fr;
-    align-items: start;
+    align-items: center;
     padding: var(--card-pad-y) var(--card-pad-x);
   }
   .cert-card__title { max-width: 355px; }
@@ -150,7 +150,7 @@
     order: 0;
     width: 293px;
     height: 293px;
-    margin: 22px 0 0 139px; /* badge at card-relative (712, 126) */
+    margin: 0 0 0 139px;
   }
 }
 

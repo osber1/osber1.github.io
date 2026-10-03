@@ -58,7 +58,7 @@ export const profile = {
   ] },
   certification: { eyebrow: '23 September 2022', title: 'Certifications',
     name: 'Oracle Certified Professional: Java SE 11 Developer',
-    text: 'Candidates who hold this certification have demonstrated proficiency in Java (Standard Edition) software development recognized by a wide range of world-wide industries. They have also exhibited thorough and broad knowledge of the Java programming language, coding practices and utilization of new features incorporated into Java SE 11. By passing the required exams, a certified individual proves fluency in Java SE and acquisition of the skills required to be a Java software developer.',
+    text: 'Oracle’s professional-level certification for Java SE 11. It confirms solid knowledge of the Java language, good coding practices and the features introduced in Java 11.',
     cta: { label: '< see more >', href: 'https://www.linkedin.com/in/osvaldas-bernatavicius/details/certifications/' } },
   contact: { eyebrow: 'iT’S important to me',
     title: ["I'm the head of GILOSA Studio", "and I'm a freelance Java developer,", 'so let’s get in touch and build', 'something new together!'],

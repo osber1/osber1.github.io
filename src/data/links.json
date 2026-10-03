@@ -1,0 +1,160 @@
+{
+  "categories": [
+    {
+      "id": "id_usefullink",
+      "title": "Useful Links"
+    },
+    {
+      "id": "id_handbooks",
+      "title": "Handbooks and Cheatsheets"
+    },
+    {
+      "id": "id_training",
+      "title": "Training Tools"
+    },
+    {
+      "id": "id_blogs",
+      "title": "Blogs"
+    }
+  ],
+  "items": [
+    {
+      "category": "id_usefullink",
+      "title": "Free for Developers",
+      "url": "https://free-for.dev",
+      "info": "List of software and other offerings with free developer tiers."
+    },
+    {
+      "category": "id_usefullink",
+      "title": "codebeautify",
+      "url": "https://codebeautify.org",
+      "info": "Code Formatter, JSON Beautifier, XML Viewer, Hex Converters and more."
+    },
+    {
+      "category": "id_usefullink",
+      "title": "DevDocs",
+      "url": "https://devdocs.io",
+      "info": "DevDocs combines multiple API documentations in a fast, organized, and searchable interface."
+    },
+    {
+      "category": "id_usefullink",
+      "title": "freemediaheckyeah",
+      "url": "https://fmhy.net",
+      "info": "The largest collection of free stuff on the internet!"
+    },
+    {
+      "category": "id_usefullink",
+      "title": "Learn X in Y minutes",
+      "url": "https://learnxinyminutes.com",
+      "info": "Small code snippets."
+    },
+    {
+      "category": "id_usefullink",
+      "title": "Dev Hints",
+      "url": "https://devhints.io",
+      "info": "Short tutorials."
+    },
+    {
+      "category": "id_usefullink",
+      "title": "Documentations",
+      "url": "https://devdocs.io",
+      "info": "Many different documentation in one place."
+    },
+    {
+      "category": "id_usefullink",
+      "title": "Kubetools",
+      "url": "https://collabnix.github.io/kubetools",
+      "info": "A Curated List of Kubernetes Tools"
+    },
+    {
+      "category": "id_usefullink",
+      "title": "Development Containers",
+      "url": "https://containers.dev",
+      "info": "An open specification for enriching containers with development specific content and settings"
+    },
+    {
+      "category": "id_usefullink",
+      "title": "Private File Sharing",
+      "url": "https://gist.github.com/Bad3r/f7f91a4b4cdd15f467f095fddd5108a7",
+      "info": "Private File Sharing Services"
+    },
+    {
+      "category": "id_handbooks",
+      "title": "Cheatsheets",
+      "url": "https://cheatsheets.zip",
+      "info": "Useful cheat sheets."
+    },
+    {
+      "category": "id_training",
+      "title": "Hacksplaining",
+      "url": "https://www.hacksplaining.com",
+      "info": "Codining games."
+    },
+    {
+      "category": "id_training",
+      "title": "Codingame",
+      "url": "https://www.codingame.com",
+      "info": "Codining games."
+    },
+    {
+      "category": "id_training",
+      "title": "Codesignal",
+      "url": "https://app.codesignal.com",
+      "info": "Codining games."
+    },
+    {
+      "category": "id_training",
+      "title": "Hackerrank",
+      "url": "https://www.hackerrank.com",
+      "info": "Codining games."
+    },
+    {
+      "category": "id_training",
+      "title": "Leetcode",
+      "url": "https://leetcode.com",
+      "info": "Codining games."
+    },
+    {
+      "category": "id_training",
+      "title": "Codewars",
+      "url": "https://www.codewars.com",
+      "info": "Codining games."
+    },
+    {
+      "category": "id_training",
+      "title": "Codegym",
+      "url": "https://codegym.cc",
+      "info": "Codining games."
+    },
+    {
+      "category": "id_blogs",
+      "title": "Martin Fowler",
+      "url": "https://martinfowler.com",
+      "info": "Martin Fowler blog."
+    },
+    {
+      "category": "id_blogs",
+      "title": "Piotr's TechBlog",
+      "url": "https://piotrminkowski.com",
+      "info": "Piotr's TechBlog blog."
+    },
+    {
+      "category": "id_blogs",
+      "title": "Thorben Janssen",
+      "url": "https://thorben-janssen.com/",
+      "info": "Thorben Janssen blog."
+    },
+    {
+      "category": "id_blogs",
+      "title": "Vlad Mihalcea",
+      "url": "https://vladmihalcea.com/blog/",
+      "info": "Vlad Mihalcea blog."
+    },
+    {
+      "category": "id_blogs",
+      "title": "Refactoring Guru",
+      "url": "https://refactoring.guru/",
+      "info": "Refactoring Guru blog."
+    }
+  ]
+}

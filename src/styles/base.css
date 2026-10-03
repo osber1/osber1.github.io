@@ -1,0 +1,127 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+html, body { overflow-x: clip; }
+
+body {
+  margin: 0;
+  background: var(--c-page);
+  color: var(--c-black);
+  font: 400 16px/24px var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 { margin: 0; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+section[id] { scroll-margin-top: 120px; }
+:focus-visible { outline: var(--focus-ring); outline-offset: 3px; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Figma's content box starts at x=150 and ends at x=1296 (not centered) */
+.container {
+  width: auto;
+  max-width: var(--container);
+  margin-left: max(var(--gutter), calc(50% - 570px));
+  margin-right: max(var(--gutter), calc(50% - 576px));
+}
+.center-block { text-align: center; }
+
+/* Section heading: eyebrow + H2 */
+.sh--left { text-align: left; }
+.sh--center { text-align: center; }
+.eyebrow {
+  margin: 0;
+  font: var(--fw-regular) var(--fs-body)/var(--lh-body) var(--font-sans);
+  color: var(--c-grey);
+  text-transform: uppercase;
+}
+.h2 {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0;
+  color: var(--c-blue);
+}
+.h2--white { color: var(--c-white); }
+.sh .h2 { margin-top: var(--eyebrow-gap); }
+@media (min-width: 1024px) {
+  .sh--lines .line { display: block; }
+}
+
+/* Pill buttons / link pills */
+.pill {
+  display: block;
+  height: var(--pill-h);
+  padding: 0 24px;
+  border: var(--border-blue);
+  border-radius: var(--r-pill);
+  font: var(--fw-regular) var(--fs-body)/calc(var(--pill-h) - 2px) var(--font-sans);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 150ms, color 150ms;
+}
+.pill--outline { background: transparent; color: var(--c-blue); }
+.pill--outline:hover { background: var(--c-blue); color: var(--c-white); }
+.pill--primary { background: var(--c-blue); color: var(--c-white); font-weight: var(--fw-bold); }
+.pill--primary:hover { background: var(--c-blue-hover); border-color: var(--c-blue-hover); }
+
+/* "< LABEL >" underline link */
+.arrow-link {
+  display: inline-block;
+  font: var(--fw-bold) var(--fs-label)/var(--lh-label) var(--font-sans);
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  transition: color 150ms;
+}
+.arrow-link--light { color: var(--c-white); }
+.arrow-link--dark { color: var(--c-black); }
+.arrow-link--blue { color: var(--c-blue); }
+
+/* Wordmark */
+.logo {
+  display: inline-block;
+  font: var(--fw-bold) 24px/19px var(--font-sans);
+  letter-spacing: 0;
+  color: var(--c-grey-light);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Decorative glow images: native size, never scaled */
+.glow {
+  position: absolute;
+  max-width: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Scroll reveal: useReveal() adds .reveal, then .is-visible when the element enters the viewport */
+.reveal { opacity: 0; }
+.reveal.is-visible {
+  opacity: 1;
+  animation: reveal-up 700ms cubic-bezier(.2, .7, .2, 1) backwards;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@keyframes reveal-up { from { opacity: 0; transform: translateY(28px); } }

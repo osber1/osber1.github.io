@@ -1,0 +1,62 @@
+:root {
+  /* colors: exact Figma fills */
+  --c-black: #161616;        /* hero bg, dark cards, dark bands, nav text, light-card titles */
+  --c-page: #f9f9f9;         /* frame bg (1:2) */
+  --c-white: #ffffff;        /* white bands (1385–2287, 4655–6017), cert & project cards */
+  --c-blue: #0004ff;         /* accent: headings, borders, glows, bottom bar, primary button */
+  --c-blue-hover: #0003cc;   /* not in Figma: hover for filled blue button */
+  --c-grey: #828282;         /* eyebrows, paragraphs, sub-lines, footer text */
+  --c-grey-light: #dadada;   /* logo, vertical CTA text, copyright */
+  --c-pill: #e6e6e6;         /* nav pill bg */
+  --c-text-on-dark: #ffffff;
+
+  /* typography */
+  --font-sans: 'Sora', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-nav: 'Ubuntu', var(--font-sans);
+  --font-mono: 'Geist Mono Variable', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --fs-display: clamp(2.5rem, 1.6rem + 3.6vw, 4.125rem);  /* 66px @1440, 40px @390 */
+  --lh-display: 1.2576;                                     /* 83px @66 (Figma box 249 / 3 lines) */
+  --fs-h2: clamp(2rem, 1.3rem + 2.6vw, 3.125rem);         /* 50px @≥1200, 32px @390 */
+  --lh-h2: 1.28;                                            /* 64px @50 */
+  --fs-h3: clamp(1.125rem, 1rem + 0.4vw, 1.3125rem);      /* 21px desktop, 18px mobile */
+  --lh-h3: 1.4762;                                          /* 31px @21 */
+  --fs-body: 1rem;      --lh-body: 1.5;                     /* 16/24 */
+  --lh-footer: 1.875;                                       /* 16/30 (footer text + quick links) */
+  --fs-label: 0.875rem; --lh-label: 18px;                   /* 14px Bold uppercase underline links */
+  --fs-nav: 0.75rem;    --lh-nav: 14px;                     /* Ubuntu 12px uppercase */
+  --fw-regular: 400; --fw-semibold: 600; --fw-bold: 700;
+
+  /* layout */
+  --frame: 1440px;
+  --container: 1146px;                   /* x 150 → 1296 at 1440 */
+  --gutter: 20px;                        /* overridden per breakpoint */
+  --section-gap: 148px;                  /* Figma "Spacing" token, used between every section */
+  --heading-gap: 60px;                   /* heading bottom → content top */
+  --eyebrow-gap: 8px;                    /* eyebrow bottom (24px line) → H2 top */
+  --card-pad-x: 97px;                    /* text inset inside big cards & experience rows */
+  --card-pad-y: 104px;                   /* Figma "Spacing" 104: cert/project card vertical padding */
+  --grid-gap: 30px;                      /* blog grid, pills, CTA buttons */
+  --row-gap: 8px;                        /* experience rows */
+
+  /* radii */
+  --r-card: 30px;   /* About card, cert card, project card, blog cards */
+  --r-row: 20px;    /* experience rows */
+  --r-nav: 15px;    /* nav pill */
+  --r-pill: 54px;   /* buttons & link pills (≥ half of 52px height → full pill) */
+
+  /* borders: Figma strokes are 1px CENTER; use 1px CSS border (≤0.5px visual diff) */
+  --border-blue: 1px solid var(--c-blue);
+
+  /* sizes */
+  --nav-h: 70px;
+  --pill-h: 52px;
+  --row-h: 105px;
+  --hero-h: 641px;
+
+  /* effects */
+  --glow-blur: 66px;   /* CSS-fallback blur that best matches Figma's layer blur 157.4 (see §3.0) */
+  --focus-ring: 2px solid var(--c-blue);
+}
+@media (min-width: 768px)  { :root { --gutter: 40px; } }
+@media (min-width: 1200px) { :root { --gutter: 24px; } }  /* never reached at 1440: 150px side space */

@@ -116,3 +116,12 @@ section[id] { scroll-margin-top: 120px; }
   pointer-events: none;
   user-select: none;
 }
+
+/* Scroll reveal: useReveal() adds .reveal, then .is-visible when the element enters the viewport */
+.reveal { opacity: 0; }
+.reveal.is-visible {
+  opacity: 1;
+  animation: reveal-up 700ms cubic-bezier(.2, .7, .2, 1) backwards;
+  animation-delay: var(--reveal-delay, 0ms);
+}
+@keyframes reveal-up { from { opacity: 0; transform: translateY(28px); } }

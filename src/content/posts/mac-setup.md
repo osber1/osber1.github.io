@@ -94,13 +94,16 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Apply the Dock and Finder changes
-killall Dock Finder
+# Menu bar: show the battery percentage
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
+
+# Apply the changes
+killall Dock Finder ControlCenter
 ```
 
 A few things from my old list are not here on purpose:
 
-- **Battery percentage:** the old `com.apple.menuextra.battery ShowPercent` setting does nothing on current macOS. Turn it on in System Settings → Control Center → Battery → Show Percentage.
+- **Battery percentage:** the old `com.apple.menuextra.battery ShowPercent` setting does nothing on current macOS. The new setting is `BatteryShowPercentage` in `com.apple.controlcenter`, and it is stored per machine, so it needs `-currentHost`. You can also turn it on in System Settings → Control Center → Battery → Show Percentage.
 - **Scroll direction:** setting `com.apple.swipescrolldirection` to `true` is already the default (natural scrolling), so there is nothing to set.
 - **Tap to click:** it was written to four different places. The two above are enough for the built-in trackpad. If you use an external Magic Trackpad, also run `defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true`.
 - **Restart:** tap to click may need a log out and back in to take effect.

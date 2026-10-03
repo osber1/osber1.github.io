@@ -22,7 +22,6 @@ Save this as `Brewfile`:
 cask "affine"
 cask "brave-browser"
 cask "doll"
-cask "jordanbaird-ice"
 cask "iina"
 cask "jetbrains-toolbox"
 cask "libreoffice"
@@ -90,7 +89,6 @@ defaults write com.apple.finder NewWindowTarget -string "PfHm"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
 defaults write com.apple.finder ShowPathbar -bool true
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
-defaults write com.apple.finder FXPreferredSearchViewStyle -string "Nlsv"
 
 # Trackpad: tap to click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true

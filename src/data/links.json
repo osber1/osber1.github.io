@@ -5,14 +5,6 @@
       "title": "Useful Links"
     },
     {
-      "id": "id_java",
-      "title": "Java Links"
-    },
-    {
-      "id": "id_git",
-      "title": "Git Repositories"
-    },
-    {
       "id": "id_handbooks",
       "title": "Handbooks and Cheatsheets"
     },
@@ -26,12 +18,6 @@
     }
   ],
   "items": [
-    {
-      "category": "id_usefullink",
-      "title": "Good Stuff",
-      "url": "https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index",
-      "info": "Handy links"
-    },
     {
       "category": "id_usefullink",
       "title": "Free for Developers",
@@ -58,12 +44,6 @@
     },
     {
       "category": "id_usefullink",
-      "title": "30 Seconds of Code",
-      "url": "https://www.30secondsofcode.org",
-      "info": "Small code snippets."
-    },
-    {
-      "category": "id_usefullink",
       "title": "Learn X in Y minutes",
       "url": "https://learnxinyminutes.com",
       "info": "Small code snippets."
@@ -76,45 +56,9 @@
     },
     {
       "category": "id_usefullink",
-      "title": "Regex 101",
-      "url": "https://regex101.com",
-      "info": "Regex editor online."
-    },
-    {
-      "category": "id_usefullink",
-      "title": "Git Cheat Sheet",
-      "url": "https://ndpsoftware.com/git-cheatsheet.html",
-      "info": "Interactive Git Cheat Sheet."
-    },
-    {
-      "category": "id_usefullink",
       "title": "Documentations",
       "url": "https://devdocs.io",
       "info": "Many different documentation in one place."
-    },
-    {
-      "category": "id_usefullink",
-      "title": "Seach engine",
-      "url": "https://you.com",
-      "info": "Search engine for programmers."
-    },
-    {
-      "category": "id_usefullink",
-      "title": "Tech talks",
-      "url": "https://dev.tube",
-      "info": "Tech talks for developers"
-    },
-    {
-      "category": "id_usefullink",
-      "title": "Open Rewrite",
-      "url": "https://docs.openrewrite.org",
-      "info": "Automated Code Refactoring"
-    },
-    {
-      "category": "id_usefullink",
-      "title": "OpenAPM",
-      "url": "https://openapm.io/landscape",
-      "info": "Open Application Performance Management tools"
     },
     {
       "category": "id_usefullink",
@@ -130,141 +74,9 @@
     },
     {
       "category": "id_usefullink",
-      "title": "OrbStack",
-      "url": "https://orbstack.dev",
-      "info": "OrbStack is the fast, light, and easy way to run Docker containers and Linux"
-    },
-    {
-      "category": "id_usefullink",
       "title": "Private File Sharing",
       "url": "https://gist.github.com/Bad3r/f7f91a4b4cdd15f467f095fddd5108a7",
       "info": "Private File Sharing Services"
-    },
-    {
-      "category": "id_java",
-      "title": "Java2s",
-      "url": "http://www.java2s.com/Tutorial/Java",
-      "info": "Java tutorials."
-    },
-    {
-      "category": "id_java",
-      "title": "DZone",
-      "url": "https://dzone.com/refcardz/core-java?chapter=2",
-      "info": "Java tutorials."
-    },
-    {
-      "category": "id_java",
-      "title": "Geeks for Geeks",
-      "url": "https://www.geeksforgeeks.org/java/?ref=leftbar",
-      "info": "Java tutorials."
-    },
-    {
-      "category": "id_java",
-      "title": "Tutorials Point",
-      "url": "https://www.tutorialspoint.com/java",
-      "info": "Java tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Java Interview Questions",
-      "url": "https://github.com/learning-zone/java-interview-questions",
-      "info": "Questions to prepare Java interview."
-    },
-    {
-      "category": "id_git",
-      "title": "Coding Interview University",
-      "url": "https://github.com/jwasham/coding-interview-university",
-      "info": "Questions to prepare interview."
-    },
-    {
-      "category": "id_git",
-      "title": "Awesome AWS",
-      "url": "https://github.com/ramitsurana/awesome-aws",
-      "info": "AWS tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Awesome Learning",
-      "url": "https://github.com/ramitsurana/awesome-learning",
-      "info": "Many different tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Awesome Microservices",
-      "url": "https://github.com/ramitsurana/awesome-microservices",
-      "info": "Microservices tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Awesome Docker",
-      "url": "https://github.com/ramitsurana/awesome-docker",
-      "info": "Docker tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Awesome Kubernetes",
-      "url": "https://github.com/ramitsurana/awesome-kubernetes",
-      "info": "Kubernetes tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Awesome Java",
-      "url": "https://github.com/akullpp/awesome-java",
-      "info": "Java tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Data Structures and Algorithms",
-      "url": "https://github.com/FarheenB/Data-Structures-and-Algorithms",
-      "info": "Data Structures and Algorithms tutorials."
-    },
-    {
-      "category": "id_git",
-      "title": "Spring 4.2 Cert Notes",
-      "url": "https://github.com/vojtechruz/spring-core-cert-notes-4.2",
-      "info": "Spring certificate tutorials."
-    },
-    {
-      "category": "id_handbooks",
-      "title": "Awesome Cheatsheets",
-      "url": "https://github.com/LeCoupa/awesome-cheatsheets",
-      "info": "Many different cheat sheets."
-    },
-    {
-      "category": "id_handbooks",
-      "title": "Docker Handbook",
-      "url": "https://www.freecodecamp.org/news/the-docker-handbook",
-      "info": "Handbook for Docker."
-    },
-    {
-      "category": "id_handbooks",
-      "title": "Kubernetes Handbook",
-      "url": "https://www.freecodecamp.org/news/how-to-become-a-certified-kubernetes-application-developer",
-      "info": "Handbook for Kubernetes."
-    },
-    {
-      "category": "id_handbooks",
-      "title": "Nginx Handbook",
-      "url": "https://www.freecodecamp.org/news/the-nginx-handbook",
-      "info": "Handbook for Nginx."
-    },
-    {
-      "category": "id_handbooks",
-      "title": "Java Best Practices",
-      "url": "https://github.com/in28minutes/java-best-practices",
-      "info": "Handbook for Java."
-    },
-    {
-      "category": "id_handbooks",
-      "title": "Linux Handbook",
-      "url": "https://www.freecodecamp.org/news/the-linux-commands-handbook",
-      "info": "Handbook for Linux."
-    },
-    {
-      "category": "id_handbooks",
-      "title": "Cheatsheets",
-      "url": "https://sweworld.net/cheatsheets",
-      "info": "Few useful cheat sheets."
     },
     {
       "category": "id_handbooks",
@@ -298,18 +110,6 @@
     },
     {
       "category": "id_training",
-      "title": "Coderbyte",
-      "url": "https://coderbyte.com",
-      "info": "Codining games."
-    },
-    {
-      "category": "id_training",
-      "title": "Projecteuler",
-      "url": "https://projecteuler.net",
-      "info": "Codining games."
-    },
-    {
-      "category": "id_training",
       "title": "Leetcode",
       "url": "https://leetcode.com",
       "info": "Codining games."
@@ -334,33 +134,9 @@
     },
     {
       "category": "id_blogs",
-      "title": "Cloud Native Computing Foundation",
-      "url": "https://www.cncf.io",
-      "info": "Cloud Native Computing Foundation blog."
-    },
-    {
-      "category": "id_blogs",
-      "title": "Baeldung",
-      "url": "https://www.baeldung.com",
-      "info": "Baeldung blog."
-    },
-    {
-      "category": "id_blogs",
       "title": "Piotr's TechBlog",
       "url": "https://piotrminkowski.com",
       "info": "Piotr's TechBlog blog."
-    },
-    {
-      "category": "id_blogs",
-      "title": "JRebel",
-      "url": "https://www.jrebel.com/blog",
-      "info": "JRebel blog."
-    },
-    {
-      "category": "id_blogs",
-      "title": "Spring How",
-      "url": "https://springhow.com",
-      "info": "Spring How blog."
     },
     {
       "category": "id_blogs",

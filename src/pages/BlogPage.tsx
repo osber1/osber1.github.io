@@ -1,13 +1,18 @@
 import { posts } from '../posts'
 import { BlogCard } from '../components/home/BlogCards'
+import PageBand from './PageBand'
 
-// Stub: Step E restyles.
 export default function BlogPage() {
   return (
-    <main className="container">
-      <h1>Writing</h1>
-      <p>Code snippets and notes I want to find again.</p>
-      {posts.map(p => <BlogCard key={p.slug} post={p} />)}
+    <main>
+      <PageBand eyebrow="Some" title="Blog Post" />
+      <section className="page-content" aria-label="All posts">
+        <div className="container">
+          <div className="page-grid">
+            {posts.map(p => <BlogCard key={p.slug} post={p} />)}
+          </div>
+        </div>
+      </section>
     </main>
   )
 }

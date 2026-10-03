@@ -12,6 +12,7 @@
   display: flow-root; /* keep the laptop's negative bottom margin inside the hero */
   padding-top: 120px;
   background: var(--c-black);
+  overflow-x: clip; /* the glow is wider than phone screens; overflow-y stays visible for the laptop */
 }
 .hero__glow {
   left: 50%;

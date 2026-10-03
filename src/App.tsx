@@ -8,6 +8,7 @@ import PostPage from './pages/PostPage'
 import ProjectsPage from './pages/ProjectsPage'
 import LinksPage from './pages/LinksPage'
 import NotFound from './pages/NotFound'
+import { ErrorBand } from './pages/PageBand'
 
 class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | null }> {
   state = { error: null as Error | null }
@@ -28,12 +29,9 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | 
   render() {
     if (!this.state.error) return this.props.children
     return (
-      <main className="container">
-        <h1>Something went wrong</h1>
-        <p>Reload the page, or go back home.</p>
-        <pre style={{ whiteSpace: 'pre-wrap' }}>{String(this.state.error.stack || this.state.error)}</pre>
-        <a href="/">← Home</a>
-      </main>
+      <ErrorBand title="Something went wrong" lead="Reload the page, or go back home." detail={String(this.state.error.stack || this.state.error)}>
+        <a className="pill pill--primary" href="/">BACK HOME</a>
+      </ErrorBand>
     )
   }
 }

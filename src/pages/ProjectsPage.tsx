@@ -1,13 +1,16 @@
 import { profile } from '../data/profile'
 import { ProjectCard } from '../components/home/ProjectsSection'
+import PageBand from './PageBand'
 
-// Stub: Step E restyles.
 export default function ProjectsPage() {
   return (
-    <main className="container">
-      <h1>Projects</h1>
-      <p>Various sample projects.</p>
-      {profile.projects.items.map(p => <ProjectCard key={p.name} project={p} />)}
+    <main>
+      <PageBand eyebrow={profile.projects.eyebrow} title={profile.projects.title} />
+      <section className="page-content" aria-label="All projects">
+        <div className="container page-stack">
+          {profile.projects.items.map(p => <ProjectCard key={p.name} project={p} />)}
+        </div>
+      </section>
     </main>
   )
 }

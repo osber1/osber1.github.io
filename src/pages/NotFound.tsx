@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom'
+import { ErrorBand } from './PageBand'
+import PillLink from '../components/ui/PillLink'
 
-// Stub: Step E restyles.
 export default function NotFound() {
   return (
-    <main className="container">
-      <h1>404</h1>
-      <p>That page doesn't exist.</p>
-      <Link to="/">← Home</Link>
-    </main>
+    <ErrorBand eyebrow="Error 404" title="Page not found" lead="That page doesn't exist.">
+      <PillLink href="/" variant="primary">BACK HOME</PillLink>
+    </ErrorBand>
   )
 }

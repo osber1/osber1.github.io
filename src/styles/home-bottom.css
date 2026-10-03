@@ -92,7 +92,7 @@
 }
 @media (min-width: 1024px) {
   .links-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .links-grid .pill { padding: 0 24px; }
+  .links-grid .pill { padding: 0 12px; }
 }
 
 /* ---------- project card (self-contained, reused on /projects) ---------- */

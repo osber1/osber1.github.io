@@ -1,0 +1,20 @@
+/* prose styles: legacy markdown + highlight rules kept until Step E restyles them */
+.prose {
+  --fg: #111110; --bg: #fafaf8; --muted: #75746f; --line: #e4e3de; --accent: #e8420b; --code-bg: #f1f0ec;
+  --mono: var(--font-mono);
+  --hl-k: #c2410c; --hl-s: #4d7c0f; --hl-c: #9a9892; --hl-t: #1d4ed8; --hl-n: #7c3aed;
+}
+.prose { margin: 48px 0 96px; }
+.prose h3 { font-size: 1.3rem; letter-spacing: -.02em; margin: 2.4em 0 .6em; }
+.prose p, .prose li { color: color-mix(in srgb, var(--fg) 88%, var(--bg)); }
+.prose a { color: var(--accent); border-bottom: 1px solid currentColor; }
+.prose pre { background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 18px 20px; overflow-x: auto;
+  scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+.prose pre code { font: .84rem/1.65 var(--mono); padding: 0; background: none; }
+.prose :not(pre) > code { font: .86em var(--mono); background: var(--code-bg); border: 1px solid var(--line); padding: 1px 6px; border-radius: 4px; }
+.prose table { border-collapse: collapse; } .prose td, .prose th { border: 1px solid var(--line); padding: 6px 12px; }
+.hljs-keyword, .hljs-literal, .hljs-built_in { color: var(--hl-k); }
+.hljs-string, .hljs-meta .hljs-string { color: var(--hl-s); }
+.hljs-comment { color: var(--hl-c); font-style: italic; }
+.hljs-title, .hljs-type, .hljs-class .hljs-title { color: var(--hl-t); }
+.hljs-number, .hljs-meta, .hljs-attr, .hljs-variable { color: var(--hl-n); }

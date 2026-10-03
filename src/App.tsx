@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Component, useEffect, useState, type ReactNode } from 'react'
 import { Link, NavLink, Route, Routes, useLocation, useParams } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -201,12 +201,41 @@ function NotFound() {
   )
 }
 
+class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | null }> {
+  state = { error: null as Error | null }
+  static getDerivedStateFromError(error: Error) {
+    return { error }
+  }
+  componentDidCatch(error: Error) {
+    console.error(error)
+    // A full reload recovers from a failed client-side navigation; do it once only.
+    try {
+      const last = Number(sessionStorage.getItem('crash-reload') || 0)
+      if (Date.now() - last > 10000) {
+        sessionStorage.setItem('crash-reload', String(Date.now()))
+        window.location.reload()
+      }
+    } catch {}
+  }
+  render() {
+    if (!this.state.error) return this.props.children
+    return (
+      <main className="wrap">
+        <PageTitle title="Something went wrong" sub="Reload the page, or go back home." />
+        <pre className="mono muted" style={{ whiteSpace: 'pre-wrap' }}>{String(this.state.error.stack || this.state.error)}</pre>
+        <a className="mono" href="/">← Home</a>
+      </main>
+    )
+  }
+}
+
 export default function App() {
   const { pathname } = useLocation()
   useEffect(() => window.scrollTo(0, 0), [pathname])
   return (
     <>
       <Header />
+      <ErrorBoundary key={pathname}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
@@ -215,6 +244,7 @@ export default function App() {
         <Route path="/links" element={<Links />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </ErrorBoundary>
       <footer className="wrap footer mono muted">
         <span>© {new Date().getFullYear()} {site.name}</span>
         <a href="https://github.com/osber1">GitHub</a>

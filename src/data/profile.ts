@@ -1,6 +1,16 @@
 import javaSymbol from '../assets/tech-java-symbol.png'
 import javaSymbol2x from '../assets/tech-java-symbol@2x.png'
 import links from './links.json'
+import springBoot from '../assets/tech/springboot.svg'
+import hibernate from '../assets/tech/hibernate.svg'
+import postgresql from '../assets/tech/postgresql.svg'
+import redis from '../assets/tech/redis.svg'
+import docker from '../assets/tech/docker.svg'
+import kubernetes from '../assets/tech/kubernetes.svg'
+import pulumi from '../assets/tech/pulumi.svg'
+import typescript from '../assets/tech/typescript.svg'
+import nestjs from '../assets/tech/nestjs.svg'
+import grafana from '../assets/tech/grafana.svg'
 
 export const nav = [
   { id: 'home', label: 'Home' }, { id: 'about', label: 'About' }, { id: 'experience', label: 'Experience' },
@@ -21,16 +31,29 @@ export const profile = {
   hero: { title: ['Senior', 'Back-End Developer'] },                   // rendered "Senior<br/>Back-End Developer"
   about: {
     eyebrow: 'a little', title: 'About Me', greeting: 'Hello!',
-    text: 'I am a Senior Java developer with almost 4 years of experience. I have experience working with technologies like Java, Liquibase, Spring, MYSQL, PostgreSQL, Hibernate, Groovy, Docker, Kubernetes, RabbitMQ, Redis, ELK stack and Grafana.',
+    text: 'I am a Senior Software Engineer with more than 5 years of experience. I have experience working with technologies like Java, Spring Boot, Hibernate, PostgreSQL, Redis, Docker, Kubernetes, Pulumi, TypeScript, NestJS, Grafana and ELK stack.',
     cta: { label: '< get in touch >', href: '#contacts' },
   },
   technologies: { eyebrow: 'I have', title: ['Experience Working', 'With Technologies Like'],
-    items: [{ name: 'Java', src: javaSymbol, src2x: javaSymbol2x }] },
+    items: [
+      { name: 'Java', src: javaSymbol, src2x: javaSymbol2x as string | undefined },
+      { name: 'Spring Boot', src: springBoot, src2x: undefined },
+      { name: 'Hibernate', src: hibernate, src2x: undefined },
+      { name: 'PostgreSQL', src: postgresql, src2x: undefined },
+      { name: 'Redis', src: redis, src2x: undefined },
+      { name: 'Docker', src: docker, src2x: undefined },
+      { name: 'Kubernetes', src: kubernetes, src2x: undefined },
+      { name: 'Pulumi', src: pulumi, src2x: undefined },
+      { name: 'TypeScript', src: typescript, src2x: undefined },
+      { name: 'NestJS', src: nestjs, src2x: undefined },
+      { name: 'Grafana', src: grafana, src2x: undefined },
+    ] },
   experience: { eyebrow: 'MINE', title: 'Work Experience', items: [
-    { years: '2024', role: 'senior java developer', company: '4FINANCE Company' },
-    { years: '2022-2024', role: 'java developer', company: '4FINANCE Company' },
+    { years: 'SINCE 2026', role: 'Senior Software Engineer', company: 'VIALET' },
     { years: 'SINCE 2022', role: 'Freelance Java Developer', company: 'GILOSA Studio' },
-    { years: '2021-2022', role: 'JUNIOR java developer', company: '4FINANCE Company' },
+    { years: '2024-2026', role: 'Senior Java Developer', company: '4FINANCE Company' },
+    { years: '2022-2024', role: 'Java Developer', company: '4FINANCE Company' },
+    { years: '2021-2022', role: 'Junior Java Developer', company: '4FINANCE Company' },
     { years: '2020-2021', role: 'Junior Java Developer', company: 'INTERNATIONAL BUSINESS SETTLEMENT Company' },
   ] },
   certification: { eyebrow: '23 September 2022', title: 'Certifications',
@@ -52,7 +75,7 @@ export const profile = {
     cta: { label: '< This is GitHub Repository. >', href: 'https://github.com/osber1/loans' },
     image: 'java' as const,
   }] },
-  footer: { text: 'Osvaldas Bernatavičius senior Java Developer with almost 4 years of experience.',
+  footer: { text: 'Osvaldas Bernatavičius Senior Software Engineer with more than 5 years of experience.',
     quickTitle: 'Quick Link', socialTitle: 'Social Media', company: 'GILOSA MB', rights: 'All rights reserved' },
 }
 

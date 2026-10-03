@@ -26,13 +26,20 @@ export default function Technologies() {
                 className="marquee__item"
                 aria-hidden={copy > 0 || tech.duplicate ? true : undefined}
               >
-                <img
-                  src={tech.src}
-                  srcSet={`${tech.src} 1x, ${tech.src2x} 2x`}
-                  width={123}
-                  height={74}
-                  alt={tech.name}
-                />
+                {tech.src2x ? (
+                  <img
+                    src={tech.src}
+                    srcSet={`${tech.src} 1x, ${tech.src2x} 2x`}
+                    width={123}
+                    height={74}
+                    alt={tech.name}
+                  />
+                ) : (
+                  <span className="marquee__logo">
+                    <img src={tech.src} alt="" aria-hidden="true" />
+                    <span className="marquee__name">{tech.name}</span>
+                  </span>
+                )}
               </li>
             )),
           )}

@@ -101,7 +101,7 @@ defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool 
 killall Dock Finder ControlCenter
 ```
 
-A few things from my old list are not here on purpose:
+What changed compared to my old list:
 
 - **Battery percentage:** the old `com.apple.menuextra.battery ShowPercent` setting does nothing on current macOS. The new setting is `BatteryShowPercentage` in `com.apple.controlcenter`, and it is stored per machine, so it needs `-currentHost`. You can also turn it on in System Settings → Control Center → Battery → Show Percentage.
 - **Scroll direction:** setting `com.apple.swipescrolldirection` to `true` is already the default (natural scrolling), so there is nothing to set.

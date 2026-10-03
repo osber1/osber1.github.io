@@ -1,7 +1,7 @@
 export const site = {
   name: 'Osvaldas Bernatavicius',
   role: 'Java Developer',
-  tagline: 'I build backend services with Java and Spring, and keep notes on what I learn along the way.',
+  tagline: 'Java and Spring developer. This is where I keep notes, snippets and projects.',
   contacts: [
     { label: 'GitHub', href: 'https://github.com/osber1' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/osvaldas-bernatavicius' },

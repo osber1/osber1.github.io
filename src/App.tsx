@@ -3,7 +3,6 @@ import { Link, NavLink, Route, Routes, useLocation, useParams } from 'react-rout
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeHighlight from 'rehype-highlight'
-import 'highlight.js/styles/github-dark.css'
 import { formatDate, posts } from './posts'
 import { site } from './data/site'
 import links from './data/links.json'
@@ -29,18 +28,14 @@ function Header() {
   const [theme, toggle] = useTheme()
   return (
     <header className="header">
-      <div className="container header-inner">
-        <Link to="/" className="brand">
-          osber<span>1</span>
-        </Link>
+      <div className="wrap header-inner">
+        <Link to="/" className="brand">Osvaldas B.</Link>
         <nav>
-          {[['/', 'Home'], ['/blog', 'Blog'], ['/projects', 'Projects'], ['/links', 'Links']].map(([to, label]) => (
-            <NavLink key={to} to={to} end={to === '/'}>
-              {label}
-            </NavLink>
+          {[['/blog', 'Writing'], ['/projects', 'Projects'], ['/links', 'Links']].map(([to, label]) => (
+            <NavLink key={to} to={to}>{label}</NavLink>
           ))}
-          <button className="theme-btn" onClick={toggle} aria-label="Toggle dark mode">
-            {theme === 'dark' ? '☀️' : '🌙'}
+          <button className="theme-btn" onClick={toggle} aria-label="Toggle theme">
+            {theme === 'dark' ? 'Light' : 'Dark'}
           </button>
         </nav>
       </div>
@@ -48,58 +43,92 @@ function Header() {
   )
 }
 
-function PostCard({ post }: { post: (typeof posts)[number] }) {
+function SectionHead({ index, title, to }: { index: string; title: string; to?: string }) {
   return (
-    <Link to={`/blog/${post.slug}`} className="card post-card">
-      <div className="meta">
-        <span className="pill">{post.category}</span> {formatDate(post.date)}
-      </div>
-      <h3>{post.title}</h3>
-      <p>{post.summary}</p>
+    <div className="section-head">
+      <span className="mono">{index}</span>
+      <h2>{title}</h2>
+      {to && <Link to={to} className="mono more">All →</Link>}
+    </div>
+  )
+}
+
+function PostRow({ post }: { post: (typeof posts)[number] }) {
+  return (
+    <Link to={`/blog/${post.slug}`} className="row">
+      <span className="mono muted">{formatDate(post.date)}</span>
+      <span className="row-main">
+        <span className="row-title">{post.title}</span>
+        <span className="row-sub">{post.summary}</span>
+      </span>
+      <span className="arrow">→</span>
     </Link>
   )
 }
 
 function Home() {
   return (
-    <>
+    <main className="wrap">
       <section className="hero">
-        <div className="container">
-          <p className="eyebrow">👋 Hi, I'm</p>
-          <h1>{site.name}</h1>
-          <p className="role">{site.role}</p>
-          <p className="lead">{site.tagline}</p>
-          <div className="actions">
-            <Link className="btn primary" to="/projects">View projects</Link>
-            <Link className="btn" to="/blog">Read the blog</Link>
-          </div>
-          <div className="socials">
-            {site.contacts.map(c => (
-              <a key={c.label} href={c.href} target="_blank" rel="noreferrer">{c.label}</a>
-            ))}
-          </div>
+        <p className="mono muted">{site.role}</p>
+        <h1>
+          Building reliable backend systems<span className="dot">.</span>
+        </h1>
+        <p className="lead">
+          I'm {site.name}. {site.tagline}
+        </p>
+        <div className="socials">
+          {site.contacts.map(c => (
+            <a key={c.label} href={c.href} target="_blank" rel="noreferrer">{c.label} ↗</a>
+          ))}
         </div>
       </section>
-      <section className="container section">
-        <h2>Skills</h2>
-        <div className="tags">
-          {site.skills.map(s => <span key={s} className="pill big">{s}</span>)}
-        </div>
+
+      <section>
+        <SectionHead index="01" title="Writing" to="/blog" />
+        {posts.slice(0, 4).map(p => <PostRow key={p.slug} post={p} />)}
       </section>
-      <section className="container section">
-        <h2>Latest posts</h2>
-        <div className="grid">{posts.slice(0, 3).map(p => <PostCard key={p.slug} post={p} />)}</div>
+
+      <section>
+        <SectionHead index="02" title="Projects" to="/projects" />
+        {site.projects.map(p => <ProjectRow key={p.name} p={p} />)}
       </section>
-    </>
+
+      <section>
+        <SectionHead index="03" title="Stack" />
+        <p className="stack mono">{site.skills.join('  /  ')}</p>
+      </section>
+    </main>
+  )
+}
+
+function ProjectRow({ p }: { p: (typeof site.projects)[number] }) {
+  return (
+    <a href={p.href} target="_blank" rel="noreferrer" className="row">
+      <span className="mono muted">{p.tags[0]}</span>
+      <span className="row-main">
+        <span className="row-title">{p.name}</span>
+        <span className="row-sub">{p.description}</span>
+      </span>
+      <span className="arrow">↗</span>
+    </a>
+  )
+}
+
+function PageTitle({ title, sub }: { title: string; sub: string }) {
+  return (
+    <div className="page-title">
+      <h1>{title}</h1>
+      <p className="lead">{sub}</p>
+    </div>
   )
 }
 
 function Blog() {
   return (
-    <main className="container section">
-      <h1>Blog</h1>
-      <p className="muted">Code snippets and notes I want to find again.</p>
-      <div className="grid">{posts.map(p => <PostCard key={p.slug} post={p} />)}</div>
+    <main className="wrap">
+      <PageTitle title="Writing" sub="Code snippets and notes I want to find again." />
+      {posts.map(p => <PostRow key={p.slug} post={p} />)}
     </main>
   )
 }
@@ -109,13 +138,12 @@ function PostPage() {
   const post = posts.find(p => p.slug === slug)
   if (!post) return <NotFound />
   return (
-    <main className="container narrow section">
-      <Link to="/blog" className="muted">← All posts</Link>
-      <h1>{post.title}</h1>
-      <div className="meta">
-        <span className="pill">{post.category}</span> {formatDate(post.date)}
-        {post.tags.map(t => <span key={t} className="tag">#{t}</span>)}
-      </div>
+    <main className="wrap narrow">
+      <Link to="/blog" className="mono muted back">← Writing</Link>
+      <h1 className="post-title">{post.title}</h1>
+      <p className="mono muted">
+        {formatDate(post.date)} · {post.category} · {post.tags.map(t => `#${t}`).join(' ')}
+      </p>
       <article className="prose">
         <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>{post.body}</ReactMarkdown>
       </article>
@@ -125,18 +153,9 @@ function PostPage() {
 
 function Projects() {
   return (
-    <main className="container section">
-      <h1>Projects</h1>
-      <p className="muted">Various sample projects.</p>
-      <div className="grid">
-        {site.projects.map(p => (
-          <a key={p.name} href={p.href} target="_blank" rel="noreferrer" className="card">
-            <h3>{p.name} ↗</h3>
-            <p>{p.description}</p>
-            <div className="tags">{p.tags.map(t => <span key={t} className="pill">{t}</span>)}</div>
-          </a>
-        ))}
-      </div>
+    <main className="wrap">
+      <PageTitle title="Projects" sub="Various sample projects." />
+      {site.projects.map(p => <ProjectRow key={p.name} p={p} />)}
     </main>
   )
 }
@@ -145,26 +164,27 @@ function Links() {
   const [q, setQ] = useState('')
   const needle = q.trim().toLowerCase()
   return (
-    <main className="container section">
-      <h1>Links</h1>
-      <p className="muted">All useful links in one place.</p>
-      <input className="search" placeholder="Search links…" value={q} onChange={e => setQ(e.target.value)} />
-      {links.categories.map(cat => {
+    <main className="wrap">
+      <PageTitle title="Links" sub="Useful things, all in one place." />
+      <input className="search mono" placeholder="Filter…" value={q} onChange={e => setQ(e.target.value)} />
+      {links.categories.map((cat, n) => {
         const items = links.items.filter(
           i => i.category === cat.id && (i.title + i.info).toLowerCase().includes(needle),
         )
         if (!items.length) return null
         return (
           <section key={cat.id}>
-            <h2>{cat.title}</h2>
-            <div className="grid">
-              {items.map(i => (
-                <a key={i.url} href={i.url} target="_blank" rel="noreferrer" className="card">
-                  <h3>{i.title} ↗</h3>
-                  <p>{i.info}</p>
-                </a>
-              ))}
-            </div>
+            <SectionHead index={String(n + 1).padStart(2, '0')} title={cat.title} />
+            {items.map(i => (
+              <a key={i.url} href={i.url} target="_blank" rel="noreferrer" className="row">
+                <span className="mono muted">{new URL(i.url).hostname.replace(/^www\./, '')}</span>
+                <span className="row-main">
+                  <span className="row-title">{i.title}</span>
+                  <span className="row-sub">{i.info}</span>
+                </span>
+                <span className="arrow">↗</span>
+              </a>
+            ))}
           </section>
         )
       })}
@@ -174,10 +194,9 @@ function Links() {
 
 function NotFound() {
   return (
-    <main className="container section center">
-      <h1>404</h1>
-      <p className="muted">That page doesn't exist.</p>
-      <Link className="btn primary" to="/">Go home</Link>
+    <main className="wrap">
+      <PageTitle title="404" sub="That page doesn't exist." />
+      <Link className="mono" to="/">← Home</Link>
     </main>
   )
 }
@@ -196,8 +215,9 @@ export default function App() {
         <Route path="/links" element={<Links />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <footer className="footer">
-        © {new Date().getFullYear()} {site.name}
+      <footer className="wrap footer mono muted">
+        <span>© {new Date().getFullYear()} {site.name}</span>
+        <a href="https://github.com/osber1">GitHub</a>
       </footer>
     </>
   )

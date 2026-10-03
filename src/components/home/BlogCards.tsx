@@ -6,9 +6,9 @@ import SectionHeading from '../ui/SectionHeading'
 export function BlogCard({ post }: { post: Post }) {
   return (
     <Link to={`/blog/${post.slug}`} className="blog-card">
-      <time dateTime={post.date}>{formatDate(post.date)}</time>
-      <h3>{post.title}</h3>
-      <span>{profile.blog.more}</span>
+      <time dateTime={post.date} className="blog-card__date">{formatDate(post.date)}</time>
+      <h3 className="blog-card__title">{post.title}</h3>
+      <span className="blog-card__more">{profile.blog.more}</span>
     </Link>
   )
 }

@@ -23,7 +23,7 @@ function Rotator({ words }: { words: string[] }) {
 }
 
 export default function Hero() {
-  const { rotator, tags } = profile.hero
+  const { rotator } = profile.hero
   return (
     <section id="home" data-section="home" className="hero">
       <Glow src={glowHero} width={1440} height={641} className="hero__glow" eager />
@@ -39,9 +39,6 @@ export default function Hero() {
           <span className="sr-only">{rotator.words.join(', ')}</span>
         </p>
       </div>
-      <ul className="hero__tags" aria-hidden="true">
-        {tags.map(tag => <li key={tag} className="hero__tag">{tag}</li>)}
-      </ul>
       <img
         className="hero__laptop"
         src={laptop}

@@ -257,7 +257,7 @@
   }
 }
 
-/* ---------- Hero: rotating word + floating skill tags ---------- */
+/* ---------- Hero: rotating word ---------- */
 .hero__rotator {
   margin: 16px 0 0;
   font: var(--fw-semibold) var(--fs-h3)/var(--lh-h3) var(--font-sans);
@@ -283,47 +283,7 @@
 }
 @keyframes word-in { from { opacity: 0; transform: translateY(70%); } }
 
-.hero__tags { display: none; }
-@media (min-width: 1200px) {
-  .hero__tags {
-    display: block;
-    position: absolute;
-    inset: 0;
-    z-index: 3;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    pointer-events: none;
-  }
-  .hero__tag {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border-radius: var(--r-pill);
-    background: rgba(255, 255, 255, 0.94);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-    font: var(--fw-semibold) 14px/20px var(--font-sans);
-    color: var(--c-black);
-    white-space: nowrap;
-    animation: tag-float 6s ease-in-out infinite alternate;
-  }
-  .hero__tag::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--c-blue);
-  }
-  .hero__tag:nth-child(1) { left: calc(50% + 210px); top: 150px; }
-  .hero__tag:nth-child(2) { left: calc(50% + 540px); top: 300px; animation-duration: 7s; animation-delay: -2s; }
-  .hero__tag:nth-child(3) { left: calc(50% - 150px); top: 430px; animation-duration: 5.5s; animation-delay: -1s; }
-  .hero__tag:nth-child(4) { left: calc(50% + 330px); top: 500px; animation-duration: 6.5s; animation-delay: -3.5s; }
-}
-@keyframes tag-float { to { transform: translateY(-12px); } }
 @media (prefers-reduced-motion: reduce) {
-  .hero__tag { animation: none; }
   .rotator__word.is-active { animation: none; }
 }
 

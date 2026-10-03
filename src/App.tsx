@@ -8,6 +8,7 @@ import PostPage from './pages/PostPage'
 import ProjectsPage from './pages/ProjectsPage'
 import LinksPage from './pages/LinksPage'
 import NotFound from './pages/NotFound'
+import { useReveal } from './hooks/useReveal'
 import { ErrorBand } from './pages/PageBand'
 
 class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | null }> {
@@ -37,6 +38,7 @@ class ErrorBoundary extends Component<{ children: ReactNode }, { error: Error | 
 }
 
 export default function App() {
+  useReveal()
   const { pathname, hash } = useLocation()
   useEffect(() => {
     if (!hash) {

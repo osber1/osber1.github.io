@@ -28,7 +28,11 @@ export const social = {
 export const profile = {
   brand: { wordmark: 'OSVALDAS B.', logoSvg: null as string | null },   // set to logo-form.svg import to use Figma "FORM"
   name: 'Osvaldas Bernatavičius',
-  hero: { title: ['Senior', 'Back-End Developer'] },                   // rendered "Senior<br/>Back-End Developer"
+  hero: {
+    title: ['Senior', 'Back-End Developer'],
+    rotator: { prefix: 'I build with', words: ['Java', 'Spring Boot', 'TypeScript', 'Kubernetes', 'PostgreSQL'] },
+    tags: ['Spring Boot', 'PostgreSQL', 'Kubernetes', 'TypeScript'],
+  },                   // rendered "Senior<br/>Back-End Developer"
   about: {
     eyebrow: 'a little', title: 'About Me', greeting: 'Hello!',
     text: 'I am a Senior Software Engineer with more than 5 years of experience. I have experience working with technologies like Java, Spring Boot, Hibernate, PostgreSQL, Redis, Docker, Kubernetes, Pulumi, TypeScript, NestJS, Grafana and ELK stack.',
@@ -75,6 +79,24 @@ export const profile = {
     cta: { label: '< This is GitHub Repository. >', href: 'https://github.com/osber1/loans' },
     image: 'java' as const,
   }] },
+  stats: [
+    { value: 5, suffix: '+', label: 'Years of experience' },
+    { value: 4, suffix: '', label: 'Companies worked with' },
+    { value: 4, suffix: '', label: 'Java versions (8, 11, 17, 25)' },
+    { value: 1, suffix: '', label: 'Oracle certification' },
+  ],
+  faq: {
+    eyebrow: 'Good to know',
+    title: 'Frequently Asked Questions',
+    items: [
+      { q: 'What do you work with?', a: 'Mostly back-end systems in Java with Spring Boot, Hibernate, PostgreSQL and Redis, deployed with Docker and Kubernetes. Lately I also build with TypeScript, NestJS and Pulumi.' },
+      { q: 'Are you available for freelance work?', a: 'Yes. I run GILOSA Studio, where I plan, build, test and deploy back-end systems and APIs for clients.' },
+      { q: 'What does freelance work with you look like?', a: 'Hourly billing with clear timelines and ongoing maintenance after the launch.' },
+      { q: 'What is your current role?', a: 'I am a Senior Software Engineer at VIALET (since June 2026). Before that I spent five years at 4finance, from Junior to Senior Java Developer.' },
+      { q: 'Are you certified?', a: 'Yes, I am an Oracle Certified Professional: Java SE 11 Developer (September 2022).' },
+      { q: 'How can I contact you?', a: 'Email, LinkedIn, GitHub or Facebook, all linked in the contact section above. Email is the fastest.' },
+    ],
+  },
   footer: { text: 'Osvaldas Bernatavičius Senior Software Engineer with more than 5 years of experience.',
     quickTitle: 'Quick Link', socialTitle: 'Social Media', company: 'GILOSA MB', rights: 'All rights reserved' },
 }

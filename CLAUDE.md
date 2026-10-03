@@ -18,7 +18,7 @@ React 19, TypeScript (strict), Vite, react-router-dom v7 (`BrowserRouter`), `rea
 - Only a desktop frame exists in Figma. Tablet and mobile layouts are derived from it, with breakpoints at 768px, 1024px and 1200px. Below 1024px the nav becomes a menu button with a drawer.
 - There is no dark mode. The design uses a fixed mix of dark and light bands.
 - Brand colour is `#0004FF`. Do not add new accent colours.
-- Home sections use these ids for the nav and footer links: `home`, `about`, `technologies`, `experience`, `certifications`, `contacts`, `blog`, `links`, `projects`. Keep them in sync with `nav` in `src/data/profile.ts`.
+- Home sections have the ids `home`, `about`, `technologies`, `experience`, `certifications`, `contacts`, `blog`, `links` and `projects`. The nav and footer link to all of them except `technologies`, which has no nav item. Keep `nav` in `src/data/profile.ts` in sync when you add or rename a section.
 - The page is clipped horizontally (`overflow-x: clip`) because the glows and the laptop image are wider than phone screens. Do not remove that without checking mobile.
 
 ## Content

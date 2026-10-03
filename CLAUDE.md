@@ -21,11 +21,11 @@ React 19, TypeScript (strict), Vite, react-router-dom v7 (`BrowserRouter`), `rea
 - Home sections have the ids `home`, `about`, `stats`, `technologies`, `experience`, `certifications`, `contacts`, `blog`, `links`, `projects` and `faq`. The nav and footer link only to the ones listed in `nav`; `stats`, `technologies` and `faq` have no nav item. Keep `nav` in `src/data/profile.ts` in sync when you add or rename a section.
 - The page is clipped horizontally (`overflow-x: clip`) because the glows and the laptop image are wider than phone screens. Do not remove that without checking mobile.
 
-- Animations: the hero has a rotating word; on desktop (1200px and up, motion allowed) it is pinned for 1800px of scrolling while scenes ("Now", "Stack", "Certified") fade in and out beside the laptop, driven by the `--p` scroll progress that `Hero.tsx` sets (the CSS in `home-top.css` does the rest, no animation library); the stats count up, and cards and headings fade in on scroll (`src/hooks/useReveal.ts`, which lists the elements it animates). All of it is switched off for `prefers-reduced-motion`. When adding a new card or heading, add its class to the list in `useReveal.ts`.
+- Animations: the hero has a rotating word, the stats count up, and cards and headings fade in on scroll (`src/hooks/useReveal.ts`, which lists the elements it animates). All of it is switched off for `prefers-reduced-motion`. When adding a new card or heading, add its class to the list in `useReveal.ts`.
 
 ## Content
 
-- Copy for the home page lives in `src/data/profile.ts`, not in the components. That includes the rotating words, hero scenes, stats and FAQ answers.
+- Copy for the home page lives in `src/data/profile.ts`, not in the components. That includes the rotating words, stats and FAQ answers.
 - Technology logos in the running line are CC0 SVGs from the `simple-icons` package, saved in `src/assets/tech/` with the fill set to `#303030` to match the Java logo. The Redis icon is from `simple-icons@9.21.0` because newer versions use the redesigned Redis mark. Java is a raster image because its icon is not in `simple-icons`.
 - Blog post front matter fields: `title`, `date` (`YYYY-MM-DD`), `category`, `tags` (a JSON array), `summary`. Posts are sorted by date, newest first, and the home page shows the newest four.
 - Verify `defaults`, Homebrew and other command-line instructions before putting them in a post. Homebrew packages can be checked with `https://formulae.brew.sh/api/cask/<name>.json`.

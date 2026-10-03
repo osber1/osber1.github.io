@@ -21,6 +21,7 @@ Save this as `Brewfile`:
 # Casks
 cask "affine"
 cask "brave-browser"
+cask "claude-code"
 cask "doll"
 cask "iina"
 cask "jetbrains-toolbox"
@@ -46,6 +47,8 @@ Then run this from the same directory:
 ```bash
 brew bundle
 ```
+
+This also installs [Claude Code](https://claude.com/product/claude-code). Start it with `claude` in any project folder, and update it later with `brew upgrade --cask claude-code`.
 
 Add shell completion for Docker and the Atuin shell history to `~/.zshrc`:
 
@@ -100,10 +103,3 @@ defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool 
 # Apply the changes
 killall Dock Finder ControlCenter
 ```
-
-What changed compared to my old list:
-
-- **Battery percentage:** the old `com.apple.menuextra.battery ShowPercent` setting does nothing on current macOS. The new setting is `BatteryShowPercentage` in `com.apple.controlcenter`, and it is stored per machine, so it needs `-currentHost`. You can also turn it on in System Settings → Control Center → Battery → Show Percentage.
-- **Scroll direction:** setting `com.apple.swipescrolldirection` to `true` is already the default (natural scrolling), so there is nothing to set.
-- **Tap to click:** it was written to four different places. The two above are enough for the built-in trackpad. If you use an external Magic Trackpad, also run `defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true`.
-- **Restart:** tap to click may need a log out and back in to take effect.
